@@ -22,12 +22,6 @@
                 <param name="ios-package" value="Diagnostic" />
             </feature>
         </config-file>
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-            <string>This app requires constant access to your location in order to track your position, even when the screen is off.</string>
-        </config-file>
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>This app will now only track your location when the screen is on and the app is displayed.</string>
-        </config-file>
 
         <js-module src="www/ios/diagnostic.js" name="Diagnostic">
             <clobbers target="cordova.plugins.diagnostic" />
